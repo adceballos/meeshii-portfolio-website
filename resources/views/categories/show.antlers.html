@@ -1,0 +1,9 @@
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 md:px-10 mt-8 md:mt-16">
+    {{ artwork }}
+        <div class="flex items-center justify-center">
+            <a href="{{ url }}" data-fancybox="gallery" data-caption="{{ title }}">
+                <img src="{{ url }}" class="w-full h-auto max-h-[30rem] transition-transform transform hover:scale-105" alt="Artwork">
+            </a>
+        </div>
+    {{ /artwork }}
+</div>
