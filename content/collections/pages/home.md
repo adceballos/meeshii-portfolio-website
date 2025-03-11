@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 0226d457-b764-4f47-82c3-7ae2f86c4951
 updated_by: 0226d457-b764-4f47-82c3-7ae2f86c4951
-updated_at: 1741670959
+updated_at: 1741730980
 logo: Straight-name-logo-colored.svg
 main_content:
   -
@@ -15,7 +15,7 @@ main_content:
     enabled: true
   -
     id: m83q02oz
-    logo: straight-name-logo-colored-cropped.png
+    logo: blue-ver-light-(1).png
     heading: 'DIGITAL ARTIST'
     button_text: PORTFOLIO
     type: nav
