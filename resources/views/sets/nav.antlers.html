@@ -1,21 +1,19 @@
-<div class="w-full bg-gradient-to-r from-[#374151] to-[#1f2937] px-64 py-16 flex items-center justify-between">
-    <!-- Left Side: Logo + Heading -->
+<div class="w-full bg-gradient-to-r from-[#374151] to-[#1f2937] px-96 py-16 flex items-center justify-between">
     <div class="flex flex-col space-x-4">
-        <img src="{{ logo }}" alt="{{ logo:alt }}" class="h-28 w-auto object-contain">
-        <h1 class="text-gray-200 font-bold text-lg mt-2">
+        <img src="{{ logo }}" alt="{{ logo:alt }}" class="h-32 w-auto object-contain">
+        <h1 class="text-gray-200 font-bold text-xl mt-3 tracking-wider">
             {{ heading }}
         </h1>
     </div>
 
-    <!-- Right Side: Buttons in 2 rows with spacing from the left side -->
-    <div class="flex flex-col gap-4 ml-16">
+    <div class="flex flex-col gap-4">
         <div class="flex space-x-5">
-            {{ partial:button :text="button_text" :url="button_link" }}
-            {{ partial:button :text="button_text" :url="button_link" }}
+            {{ partial:button :text="one_button_text" :url="one_button_link" }}
+            {{ partial:button :text="two_button_text" :url="two_button_link" }}
         </div>
         <div class="flex space-x-5">
-            {{ partial:button :text="button_text" :url="button_link" }}
-            {{ partial:button :text="button_text" :url="button_link" }}
+            {{ partial:button :text="three_button_text" :url="three_button_link" }}
+            {{ partial:button :text="four_button_text" :url="four_button_link" }}
         </div>
     </div>
 </div>
