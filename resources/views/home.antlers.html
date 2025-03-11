@@ -1,3 +1,10 @@
+{{ main_content }}
+    {{ if config:app:debug }}
+    <!-- Set: {{ type }} -->
+    {{ /if }}
+    {{ partial src="sets/{type}" }}
+{{ /main_content }}
+<!--
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     {{ collection:categories }}
         <a href="{{ url }}" class="group relative block overflow-hidden rounded-lg transition-transform transform hover:scale-105">
@@ -8,3 +15,4 @@
         </a>
     {{ /collection:categories }}
 </div>
+-->

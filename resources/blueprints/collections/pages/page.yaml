@@ -13,25 +13,59 @@ tabs:
               validate:
                 - required
           -
-            handle: content
+            handle: main_content
             field:
-              type: markdown
-              display: Content
-              localizable: true
-          -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
+              type: replicator
+              display: 'Main Content'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    hero:
+                      display: Hero
+                      fields:
+                        -
+                          handle: hero_image
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Hero Image'
+                            max_files: 1
+                    nav:
+                      display: Nav
+                      fields:
+                        -
+                          handle: logo
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Logo
+                        -
+                          handle: heading
+                          field:
+                            type: text
+                            display: Heading
+                        -
+                          import: button
+                          prefix: one_
+                        -
+                          import: button
+                          prefix: two_
+                        -
+                          import: button
+                          prefix: three_
+                        -
+                          import: button
+                          prefix: four_
+                    socials:
+                      display: Socials
+                      fields:
+                        -
+                          handle: heading
+                          field:
+                            type: text
+                            display: Heading
   sidebar:
     display: Sidebar
     sections:
