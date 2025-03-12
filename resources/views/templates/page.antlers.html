@@ -1,0 +1,6 @@
+{{ main_content }}
+    {{ if config:app:debug }}
+    <!-- Set: {{ type }} -->
+    {{ /if }}
+    {{ partial src="sets/{type}" }}
+{{ /main_content }}
